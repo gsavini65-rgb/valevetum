@@ -1,42 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VALUVENTUM – Geld ist eine Vereinbarung</title>
-  <meta name="description" content="VALUVENTUM ist eine private Verrechnungseinheit in einem geschlossenen Netzwerk. Kein Geld. Kein Umtausch. Keine Auszahlung. 50.000.000 VALU Start-Rechenstand je Person." />
-
+  <title>VALUVENTUM – Netzwerk-Verrechnungs- und Wertesystem</title>
+  <meta name="description" content="VALUVENTUM ist ein privates, geschlossenes Netzwerk-Verrechnungs- und Wertesystem. Bei VALU zählt nicht die Zahl – sondern die Vereinbarung." />
   <style>
-    :root{
-      --bg:#ffffff;
-      --text:#142126;
-      --gold:#c8ac63;
-      --green:#1e7a3f;
-      --card:#f8fafc;
-      --line:#e5e7eb;
-      --note:#fffdf4;
-      --noteLine:#f1e6c8;
-    }
     body{
       margin:0;
-      background:var(--bg);
-      color:var(--text);
+      background:#ffffff;
+      color:#142126;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     }
-    .valuventum-landing{ padding:3rem 1.5rem; }
-    .valuventum-inner{ max-width:980px; margin:0 auto; font-size:16px; }
+    .valuventum-landing{
+      padding:3rem 1.5rem;
+    }
+    .valuventum-inner{max-width:980px;margin:0 auto;font-size:16px;}
+    .vv-header{text-align:center;margin-bottom:2rem;}
+    .vv-header h1{margin:0 0 .5rem;font-size:2.6rem;letter-spacing:.03em;color:#c8ac63;}
+    .vv-header p{margin:.15rem 0;font-size:1.05rem;line-height:1.5;}
 
-    .vv-header{ text-align:center; margin-bottom:2rem; }
-    .vv-header h1{ margin:0 0 .5rem; font-size:2.7rem; letter-spacing:.03em; color:var(--gold); }
-    .vv-header p{ margin:.15rem 0; font-size:1.05rem; line-height:1.5; }
-
-    .vv-badges{ margin-top:.9rem; }
+    .vv-badges{margin-top:.9rem;}
     .vv-badge{
       display:inline-block;
       font-size:.85rem;
-      padding:.25rem .6rem;
+      padding:.2rem .55rem;
       border-radius:999px;
-      border:1px solid var(--line);
+      border:1px solid #e5e7eb;
       background:#f9fafb;
       margin:.2rem .3rem .2rem 0;
       white-space:nowrap;
@@ -50,40 +40,46 @@
       margin:1.2rem 0 1.6rem;
     }
     @media (min-width:860px){
-      .vv-grid{ grid-template-columns:1fr 1fr; }
+      .vv-grid{grid-template-columns:1fr 1fr;}
     }
 
     .vv-card{
-      background:var(--card);
-      border:1px solid var(--line);
+      background:#f8fafc;
+      border:1px solid #e5e7eb;
       border-radius:12px;
       padding:1.05rem 1.15rem;
     }
-    .vv-card h3{ margin:0 0 .55rem; font-size:1.18rem; color:var(--green); }
-    .vv-card p{ margin:.35rem 0; line-height:1.65; }
-    .vv-card ul{ margin:.35rem 0 .2rem 1.2rem; padding:0; line-height:1.65; }
+    .vv-card h3{
+      margin:0 0 .55rem;
+      font-size:1.18rem;
+      color:#1e7a3f;
+    }
+    .vv-card p{margin:.35rem 0;line-height:1.65;}
+    .vv-card ul{margin:.35rem 0 .2rem 1.2rem;padding:0;line-height:1.65;}
 
     .vv-note{
-      background:var(--note);
-      border:1px solid var(--noteLine);
-      border-left:4px solid var(--gold);
+      background:#fffdf4;
+      border:1px solid #f1e6c8;
+      border-left:4px solid #c8ac63;
       padding:.95rem 1.1rem;
       margin:1.05rem 0 1.25rem;
       border-radius:12px;
       font-size:.98rem;
       line-height:1.65;
     }
-    .vv-note h3{ margin:0 0 .55rem; color:var(--green); font-size:1.15rem; }
+    .vv-note h3{margin:0 0 .55rem;color:#1e7a3f;font-size:1.15rem;}
     .vv-quote{
       margin:1rem 0 .2rem;
       padding-left:.9rem;
-      border-left:3px solid var(--gold);
+      border-left:3px solid #c8ac63;
       font-style:italic;
       font-size:.98rem;
     }
 
-    .vv-hr{ height:1px; background:var(--line); border:0; margin:1.9rem 0 1.5rem; }
-    .vv-small{ font-size:.95rem; color:#4b5563; line-height:1.6; margin-top:.6rem; }
+    .vv-hr{height:1px;background:#e5e7eb;border:0;margin:1.9rem 0 1.5rem;}
+
+    .vv-small{font-size:.95rem;color:#4b5563;line-height:1.6;margin-top:.6rem;}
+    .vv-h2{margin:0 0 .85rem;font-size:1.65rem;color:#c8ac63;}
   </style>
 </head>
 
@@ -93,18 +89,15 @@
 
     <div class="vv-header">
       <h1>VALUVENTUM</h1>
-      <p><strong>Geld ist eine Vereinbarung.</strong></p>
-      <p>Private Verrechnungseinheit in einem geschlossenen Netzwerk</p>
-
+      <p>Netzwerk-Verrechnungs- und Wertesystem</p>
+      <p>Einstieg mit 0,50&nbsp;€ Orientierungswert je Person – freiwilliger 2,00&nbsp;€-Beitrag für die technische Entwicklung</p>
       <div class="vv-badges">
         <span class="vv-badge">geschlossenes netzwerk</span>
-        <span class="vv-badge">kein geld</span>
-        <span class="vv-badge">kein umtausch</span>
-        <span class="vv-badge">keine auszahlung</span>
         <span class="vv-badge">keine zinsen</span>
         <span class="vv-badge">keine boerse</span>
+        <span class="vv-badge">kein umtausch</span>
         <span class="vv-badge">1 mensch = 1 stimme</span>
-        <span class="vv-badge">50.000.000 valu start je person</span>
+        <span class="vv-badge">50.000.000 valu je person</span>
       </div>
     </div>
 
@@ -112,60 +105,76 @@
       <div class="vv-card">
         <h3>Was ist VALUVENTUM?</h3>
         <p>
-          VALUVENTUM ist eine <strong>private Verrechnungseinheit</strong> für Vereins- bzw. Netzwerkmitglieder.
+          VALUVENTUM ist ein <strong>privates, geschlossenes Netzwerk-Verrechnungs- und Wertesystem</strong>.
           Es ist <strong>kein Geld</strong>, kein Investment, keine Börse und kein Spekulationsmodell.
         </p>
         <ul>
           <li>Kein Umtausch in Euro oder andere Währungen</li>
           <li>Kein Rücktausch, keine Auszahlung</li>
-          <li>Wert entsteht durch Angebot, Leistung und freiwillige Vereinbarung</li>
+          <li>Wert entsteht durch Arbeit, Mitwirkung und Vereinbarung</li>
         </ul>
       </div>
 
       <div class="vv-card">
-        <h3>Gleichberechtigung für alle</h3>
+        <h3>Gleichwertiger Start</h3>
         <p>
-          Jede Person startet gleichberechtigt mit einem <strong>Start-Rechenstand von 50.000.000 VALU</strong>.
+          Jeder erwachsene Mensch erhält beim Einstieg einen
+          <strong>Start-Rechenstand von 50.000.000 VALU</strong>.
         </p>
         <p>
-          Nicht der Verein bestimmt die Preise – sondern <strong>Händler und Leistungserbringer</strong> legen selbst fest,
-          was sie für ihr Angebot erhalten möchten.
+          Alle beginnen gleich – ohne Vorteil, ohne Nachteil.
         </p>
       </div>
     </div>
 
     <hr class="vv-hr" />
 
+    <!-- KORRIGIERTER VEREINBARUNGS-BLOCK -->
     <div class="vv-note" role="note" aria-label="Merksatz: Vereinbarung statt Zahl">
       <h3>Bei VALU zählt nicht die Zahl – sondern die Vereinbarung</h3>
 
-      <p><strong>Wichtig:</strong> VALU-Zahlen sind <strong>keine Geldpreise</strong> und kein „Euro-Preis pro VALU“.</p>
+      <p><strong>Wichtig:</strong> Die Zahlen in VALU sind <strong>keine Geldpreise</strong> und kein „Euro-Preis pro VALU“.</p>
+
+      <p>
+        Im Alltag zählt nicht die Zahl,<br />
+        sondern was <strong>freiwillig vereinbart</strong> ist.
+      </p>
+
+      <p>
+        <strong>Hersteller und Händler kalkulieren weiterhin in Euro (€).</strong><br />
+        VALU dient im Netzwerk ausschließlich als <strong>Recheneinheit für die Verrechnung</strong>.
+      </p>
+
+      <div class="vv-quote">
+        <strong>Beispiel (Vereinbarung):</strong><br />
+        Ein Produkt kostet <strong>119&nbsp;€</strong>.<br />
+        In der Valuventum-Vereinbarung entspricht das:<br />
+        <strong>119&nbsp;€ = 119&nbsp;VALU</strong>
+      </div>
 
       <div class="vv-quote">
         <strong>Merksatz:</strong><br />
-        Geld entsteht durch Akzeptanz – und durch freiwillige Vereinbarung.
+        Bei VALU zählt nicht die Zahl – sondern die Vereinbarung.
       </div>
 
       <p>
-        VALU ist eine Recheneinheit innerhalb des Netzwerks.<br />
-        Was eine Leistung „wert“ ist, entsteht durch <strong>freie Übereinkunft</strong> zwischen Anbieter und Nutzer.
-      </p>
-
-      <p class="vv-small">
-        Hinweis: Staatliche Pflichten (z. B. Steuern, Buchhaltung) bleiben unberührt.
+        Wie beim Wunder von Wörgl:<br />
+        Es war kein Schilling.<br />
+        Es war eine Recheneinheit.
       </p>
     </div>
+    <!-- /KORRIGIERTER BLOCK -->
 
     <hr class="vv-hr" />
 
     <div class="vv-card">
       <h3>Freiwilligkeit</h3>
       <p>
-        Teilnahme und Unterstützung sind <strong>freiwillig</strong>. Keine Zahlungspflicht, keine versteckten Verpflichtungen.
+        Teilnahme und Unterstützung sind <strong>freiwillig</strong>.
+        Es gibt keine Zahlungspflicht und keine versteckten Verpflichtungen.
       </p>
-      <p>
-        <strong>Den restlichen Hintergrund, die Funktionsweise im Detail und praktische Beispiele</strong><br />
-        erfährt man beim Vortrag am <strong>05.03.2026</strong>.
+      <p class="vv-small">
+        Staatliche Pflichten (z. B. Steuern, Buchhaltung) bleiben unberührt.
       </p>
     </div>
 
@@ -173,4 +182,3 @@
 </section>
 </body>
 </html>
-
